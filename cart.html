@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>購物車</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url(head.css);
+        @import url(cart.css);
+        * {cursor: url(https://cur.cursors-4u.net/food/foo-6/foo507.ani), url(https://cur.cursors-4u.net/food/foo-6/foo507.png), auto !important;} 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="all product.html" target="_blank">[全品項]</a>
+            <a href="all product.html#jpn" target="_blank">[日本]</a>
+                <a href="all product.html#kor" target="_blank">[韓國]</a>
+                <a href="all product.html#china" target="_blank">[中國]</a>
+                <a href="all product.html#asia" target="_blank">[東南亞]</a>
+                <a href="all product.html#usa" target="_blank">[歐美]</a>
+          </div>
+        </div>
+        <div class="m1"><button class="button1" onclick="openNav()"><img class="m1" src="image/menu.jpg"></button></div>
+    
+    
+        <script>
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+    
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+        </script>
+        <div class="s1">
+          <div class="search-box">
+            <input class="search-txt" type="text" placeholder="Search..." name="">
+            <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+        <div class="L1"><img class="L1" src="image/Logo.jpg" width="175px"></div>
+        <div class="a1"><button class="button1"><img class="a1" src="image/aboutus.jpg"> </button></div>
+        <div class="c1"><button class="button1"><img class="c1" src="image/cart.jpg"></button></div>
+        <div class="l1"><button class="button1"><a href="login.html" target="_blank"><img class="l1" src="image/login.jpg" ></a></button></div>
+      </div>
+      <div class="cart-page">
+
+        <table>
+            <tr>
+                <th>產品</th>
+                <th>數量</th>
+                <th>單品項總價格</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/jpn3.png">
+                        <div>
+                            <p>Pocky巧克力棒</p>
+                            <small>價格:$40</small>
+                            <br>
+                            <a href="">庫存量:10件</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="text" value="1"></td>
+                <td>$40</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/china4.png">
+                        <div>
+                            <p>魔芋爽</p>
+                            <small>價格:$4</small>
+                            <br>
+                            <a href="">庫存量:200件</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="text" value="8"></td>
+                <td>$32</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/asia4.png">
+                        <div>
+                            <p>Nabati威化餅乾</p>
+                            <small>價格:$129</small>
+                            <br>
+                            <a href="">庫存量:50件</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="text" value="1"></td>
+                <td>$129</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="image/usa3.png">
+                        <div>
+                            <p>冠寶起士捲心餅</p>
+                            <small>價格:$69</small>
+                            <br>
+                            <a href="">庫存量:80件</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="text" value="1"></td>
+                <td>$69</td>
+            </tr>
+        </table>
+         <div class="total">
+           <table>
+               <tr>
+                   <td>總價</td>
+                <td>$270</td>
+                <td><button type="submit"  class="money" onclick="openForm()">結帳</button></td>
+               </tr>
+               
+           </table>
+         </div>
+      </div>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>結帳</h1>
+      
+          <label for="name"><b>姓名</b></label>
+          <input type="text" placeholder="XXX" name="name" >
+      
+          <label for="number"><b>手機</b></label>
+          <input type="text" placeholder="09XX-XXX-XXX" name="number">
+          
+          <label for="email"><b>email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" >
+          
+          <label for="ship"><b>寄送方式</b></label>
+          <select size="1" name="寄送">
+                      <option>7-11</option>
+                      <option>萊爾富</option>
+                      <option>全家</option>
+                      <option>OK</option>
+                      <option>中華郵政</option>
+                      <option>宅配</option>
+                    </select>
+          <br>
+          <label for="pay"><b>付款方式</b></label>
+          <select size="1" name="付款">
+                      <option>貨到付款</option>
+                      <option>信用卡</option>
+                      <option>銀行轉帳</option>
+                    </select>
+      
+          <button type="submit" class="btn" onclick="alert('訂單完成!謝謝您對零肚空間的支持')">
+            <a href="index.html"> 確定</a></button>
+          <button type="button" class="btn cancel" onclick="closeForm()">取消</button>
+        </form>
+      </div>
+      
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
+
+
+      <div class="footer">
+        <p>瀏覽人數:20次<br>Copyright 2022 by零肚空間. All Rights Reserved.</p>
+        <img src="image/Logo.jpg" width="120px">
+      </div>
+
+</body>
+</html>
