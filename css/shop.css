@@ -46,3 +46,21 @@ transform: scale(1.1);
 .text1{
     text-align: left;
 }
+.rating div{
+    color: #ffe400;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.rating input + label{
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+}
+.rating input:check + label ~ label{
+    color:#838383;
+}
+.rating label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
