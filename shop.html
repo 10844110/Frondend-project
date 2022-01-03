@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>零肚空間</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url(head2.css);
+        @import url(img.css);
+        @import url(shop.css);
+        
+        * {cursor: url(https://cur.cursors-4u.net/food/foo-6/foo507.ani), url(https://cur.cursors-4u.net/food/foo-6/foo507.png), auto !important;} 
+    </style>
+</head>
+<body>
+  <div class="header"> <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">[日本]卡辣姆久洋芋片</a>
+      <a href="#">[日本]Pocky巧克力棒</a>
+      <a href="#">[日本]梅片</a>
+      <a href="#">[日本]抹茶巧克力餅乾</a>
+      <a href="#">[韓國]好麗友烏龜玉米脆片</a>
+      <a href="#">[韓國]CW大蒜麵包餅乾</a>
+      <a href="#">[韓國]CW可可豆風味麻糬餅</a>
+      <a href="#">[韓國]DOORI即食餐</a>
+      <a href="#">[中國]魔芋爽</a>
+      <a href="#">[中國]好多魚</a>
+      <a href="#">[中國]螺獅粉</a>
+      <a href="#">[中國]辣條</a>
+      <a href="#">[泰國]榴槤脆片</a>
+      <a href="#">[菲律賓]Dingdong叮噹豆</a>
+      <a href="#">[印尼]Nabati威化餅乾</a>
+      <a href="#">[越南]Maori巧克力</a>
+      <a href="#">[比利時]Lotus蓮花薄脆餅</a>
+      <a href="#">[美國]Combo起士捲心餅</a>
+      <a href="#">[荷蘭]高達糖漿煎餅</a>
+      <a href="#">[瑞士]Lindt巧克力</a>
+    </div>
+  </div>
+  <div class="m1"><button class="button1" onclick="openNav()"><img class="m1" src="image/menu.jpg"  ></button></div>
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+       <div class="s1">
+         <div class="search-box" >
+           <input class="search-txt" type="text" placeholder="Search..." name="">
+           <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+          </div>
+        </div>
+        <div class="L1"><img class="L1" src="image/Logo.jpg" width="175px" ></div>
+        <div class="a1"><button class="button1"><img class="a1" src="image/aboutus.jpg" > </button></div>
+        <div class="c1"><button class="button1"><img class="c1" src="image/cart.jpg" ></button></div>
+        <div class="l1"><button class="button1"><img class="l1" src="image/login.jpg"  ></button></div>
+  </div>
+  <div class="all">
+      <div class="shop">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <img src="image/jpn3.png" class="pocky">
+              <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image/pocky2.jpg" class="pocky">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="image/pocky3.jpg" class="pocky">
+                <div class="text"></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>  
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+            </script>    
+          <div class="information">
+                  <br><h1>Pocky巧克力棒</h1>
+                  <h2>NT $40</h2>
+                  <div class="count">
+                    <h2>數量</h2>
+                    <button onclick="Less()" class="go">-</button>&nbsp&nbsp&nbsp
+                    <span class="itemcount" id="itemcount">1</span>&nbsp&nbsp&nbsp
+                    <button onclick="Add()" class="go">+</button><br><br><br>
+                    <button class="buy">加入購物車</button>
+                  </div>
+            </div>
+            <script>
+                function Add() {
+                var num = parseInt(document.getElementById('itemcount').innerText);
+                num++;
+                document.getElementById('itemcount').innerText = num.toString();
+                ProductNumberChange();
+                }
+                function Less() {
+                var num = parseInt(document.getElementById('itemcount').innerText);
+                if (num > 1) {
+                num--;
+                document.getElementById('itemcount').innerText = num.toString();
+                ProductNumberChange();
+                } else {
+                Delete()
+                }
+                }
+            </script>
+        </div><br><br><hr>
+        <div>
+            <div class="text1">
+                <span>
+                    <h3>商品資訊</h3>
+                    庫存：44件<br>
+                    ★日本原裝進口<br>
+                    ★香脆濃郁 最對味的棒棒餅<br>
+                    <h3>產品規格</h3>
+                    <ul>
+                        <li>內容物名稱：小麥粉,砂糖,可可膏,大豆油,全脂奶粉,酥油(棕櫚油),麥芽精,小麥澱粉,食鹽,酵母,可可脂,大豆卵磷脂,香料,碳酸氫鈉,食用色素(婀娜多),調味料(鹽.氯化鉀)</li>
+                        <li>內容量：133.2公克 (14.8公克 *9袋)</li>
+                        <li>原產地(國)：日本埼玉縣</li>
+                        <li>保存期限：365日</li>
+                    </ul>
+                    <h3>備註</h3>
+                    ★本品含有大豆 .小麥 .牛奶製品。<br>
+                    ★本商品因日本會不定時更換包裝，以實際收到商品為主。
+                </span>
+            </div><hr>
+            <div class="text1">
+                <span class="rate1">
+                    <h3>商品評價</h3>
+                    <span>
+                        <h3>Funny &nbsp &nbsp 2021/12/12 15:07</h3>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br>
+                        <span>超豪吃</span>
+                    </span>
+                    <span>
+                        <h3>Slava &nbsp &nbsp 2021/11/28 20:43</h3>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span><br>
+                        <span>巧克力我最愛</span>
+                    </span>
+                    <span>
+                        <h3>Nico &nbsp &nbsp 2021/11/19 08:35</h3>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span><br>
+                        <span>追劇必備零食</span>
+                    </span>
+                </span>
+            </div><hr>
+            <div class="text1">
+              <span><h3>我要評論</h3></span>
+              <div class="Comment">
+                <div class="rate effecting">
+                  <input type="radio" name="rating_stars" value="star_one" id="star_one" />
+                  <label for="star_one" class="stars">One star</label>
+                  <input type="radio" name="rating_stars" value="star_two" id="star_two" />
+                  <label for="star_two" class="stars">Two stars</label>
+                  <input type="radio" name="rating_stars" value="star_three" id="star_three" />
+                  <label for="star_three" class="stars">Three stars</label>
+                  <input type="radio" name="rating_stars" value="star_four" id="star_four" />
+                  <label for="star_four" class="stars">Four stars</label>
+                  <input type="radio" name="rating_stars" value="star_five" id="star_five" />
+                  <label for="star_five" class="stars">Five stars</label>
+                </div>
+                <textarea placeholder="我要評論..." name="content" style="resize:none;height:200px;width: 100%;"></textarea><br>
+                <button type="submit">送出</button>
+                <button type="button" onclick="document.getElementById('id03').style.display='none'"
+                  class="cancelbtn">取消</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="image/Logo.jpg" width="120px" class="logo">
+        瀏覽人數:20次<br>Copyright 2022 by零肚空間. All Rights Reserved.
+        
+    </div>
+  
+</body>
+</html>
