@@ -1,0 +1,66 @@
+.all{
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+    text-align: center;
+    color: black;
+    /*background-color: rgba(72, 61, 139,0.5);*/
+    margin: 30px 150px 30px 150px;
+}
+.shop{
+    columns: 2;
+}
+
+.information{
+    text-align: left;
+    -webkit-column-break-before: always;
+}
+.shop1:hover {
+transform: scale(1.1);
+}
+.itemcount{
+    font-size: 28px;
+    
+}
+.go{
+    color: white;
+    background-color: #4980a3;
+}
+.buy{
+    display: inline-block;
+    width:80%;
+    background-color: #4980a3;
+    color: white;
+    border: none;
+    font-size: 22px;
+    padding: 10px 10px;
+}
+.buy:hover{
+    cursor: pointer;
+    background-color: #3e8e41
+}
+.buy:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.text1{
+    text-align: left;
+}
+.rating div{
+    color: #ffe400;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.rating input + label{
+    font-size: 60px;
+    text-shadow: 1px 1px 0 #ffe400;
+    cursor: pointer;
+}
+.rating input:check + label ~ label{
+    color:#838383;
+}
+.rating label:active{
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}

@@ -1,0 +1,59 @@
+.tab{
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 100px 20px 100px;
+}
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #b1c9d3;}
+#News {background-color: #ead0de;}
+#Contact {background-color: #c9cfe9;}
+.text1{
+  columns: 2;
+  
+}
+.text2{
+  text-align: left;
+  -webkit-column-break-before: always;
+}
+.me{
+  border-radius: 50%;
+  max-width: 220px;
+  max-height: 220px;
+  overflow: hidden;
+  transition: all 0.5s;
+  width: 100%;
+ 
+}
+.me:hover {
+  transform: scale(1.1);
+}
+.point{
+  border: 5px solid black;
+}
+span.fa fa-star checked{
+  color: yellow;
+}
